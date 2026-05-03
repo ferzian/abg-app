@@ -11,9 +11,17 @@ export default function Home() {
             <li><a href="#locations" className="hover:text-orange-600 transition">Locations</a></li>
             <li><a href="#about" className="hover:text-orange-600 transition">About Us</a></li>
           </ul>
-          <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-lg font-semibold transition">
-            Order Now
-          </button>
+          <div className="flex items-center gap-4">
+            <a href="/login" className="text-gray-700 hover:text-orange-600 font-semibold transition">
+              Login
+            </a>
+            <a href="/register" className="text-gray-700 hover:text-orange-600 font-semibold transition">
+              Register
+            </a>
+            <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-lg font-semibold transition">
+              Order Now
+            </button>
+          </div>
         </nav>
       </header>
 
