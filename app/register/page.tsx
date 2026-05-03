@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function Home() {
+export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
