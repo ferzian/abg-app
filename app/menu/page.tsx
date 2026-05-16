@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
-import { MdShoppingCart, MdSearch, MdPerson } from 'react-icons/md';
+import { MdShoppingCart, MdSearch } from 'react-icons/md';
 
 interface MenuItem {
   id: number;
@@ -123,53 +122,8 @@ export default function MenuPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-orange-600">
-            ABG
-          </Link>
-          <ul className="hidden md:flex items-center gap-8 text-gray-700">
-            <li>
-              <Link href="/" className="hover:text-orange-600 transition">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/menu" className="text-orange-600 font-semibold">
-                Menu
-              </Link>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-600 transition">
-                Locations
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-600 transition">
-                About
-              </a>
-            </li>
-          </ul>
-          <div className="flex items-center gap-4">
-            <button className="p-2 hover:bg-gray-100 rounded-lg transition">
-              <MdSearch className="w-5 h-5 text-gray-700" />
-            </button>
-            <button className="p-2 hover:bg-gray-100 rounded-lg transition">
-              <MdShoppingCart className="w-5 h-5 text-gray-700" />
-            </button>
-            <button className="p-2 hover:bg-gray-100 rounded-lg transition">
-              <MdPerson className="w-5 h-5 text-gray-700" />
-            </button>
-            <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-lg font-semibold transition">
-              Order Now
-            </button>
-          </div>
-        </nav>
-      </header>
-
       {/* Search Bar */}
-      <div className="bg-gray-50 py-6 sticky top-20 z-40">
+      <div className="bg-gray-50 py-6 sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             <input
@@ -185,7 +139,7 @@ export default function MenuPage() {
       </div>
 
       {/* Category Tabs */}
-      <div className="bg-white border-b border-gray-200 sticky top-36 z-40">
+      <div className="bg-white border-b border-gray-200 sticky top-32 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-4 overflow-x-auto py-4">
             {categories.map((category) => (

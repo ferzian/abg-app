@@ -1,30 +1,6 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-orange-600">ABG</div>
-          <ul className="hidden md:flex items-center gap-8 text-gray-700">
-            <li><a href="#home" className="hover:text-orange-600 transition">Home</a></li>
-            <li><a href="#menu" className="hover:text-orange-600 transition">Menu</a></li>
-            <li><a href="#locations" className="hover:text-orange-600 transition">Locations</a></li>
-            <li><a href="#about" className="hover:text-orange-600 transition">About Us</a></li>
-          </ul>
-          <div className="flex items-center gap-4">
-            <a href="/login" className="text-gray-700 hover:text-orange-600 font-semibold transition">
-              Login
-            </a>
-            <a href="/register" className="text-gray-700 hover:text-orange-600 font-semibold transition">
-              Register
-            </a>
-            <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-lg font-semibold transition">
-              Order Now
-            </button>
-          </div>
-        </nav>
-      </header>
-
       {/* Hero Section */}
       <section id="home" className="relative bg-black bg-opacity-60 text-white py-20 md:py-32">
         <div
