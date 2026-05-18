@@ -98,6 +98,16 @@ const menuItems: MenuItem[] = [
     reviews: 67,
     category: 'Paket Combo',
   },
+  {
+    id: 9,
+    name: 'Paket Lengkap Family',
+    description: 'Paket hemat untuk 4-5 orang dengan berbagai pilihan ayam',
+    price: 120000,
+    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop',
+    rating: 4.9,
+    reviews: 67,
+    category: 'Paket Combo',
+  },
 ];
 
 const categories = ['Semua', 'Ayam Bakar', 'Ayam Goreng', 'Paket Combo', 'Sisi & Sambal', 'Minuman'];
